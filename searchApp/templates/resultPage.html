@@ -1,0 +1,17 @@
+{% extends 'searchPage.html' %}
+
+ <!-- notice this loop already handles if searchResult is None i.e. empty -->
+{% block resultContent %}
+  <h3><p>Results</p></h3>
+  <p>
+      {% if searchResult %}
+        <ol>
+            {% for result in searchResult %}
+              <li> {{ result }}</li>
+            {% endfor %}
+        </ol>
+      {% else %}
+            <p> Book does not exist in inventory </p>
+      {% endif %}
+</p>
+{% endblock resultContent %}

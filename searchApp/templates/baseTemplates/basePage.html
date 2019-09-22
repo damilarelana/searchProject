@@ -1,0 +1,17 @@
+<!Doctype HTML>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>SearchApp</title>
+    <head>
+    <body bgcolor="#c0c0cd">
+      {% block searchForm %}
+        <h1>searchApp Homepage</h1>
+        <p>
+          {{ currentDateTime }}
+        </p>
+        <p>
+          This Django app implements a search functionality on this <a href="{% url 'searchPage' %}" style="text-decoration:none;">page</a>
+      {% endblock searchForm %}
+    </body>
+  </html>

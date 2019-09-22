@@ -1,0 +1,14 @@
+{% extends 'baseTemplates/basePage.html' %}
+
+{% block searchForm %}
+  <h3><p>Search Box</p></h3>
+    <form method="get">
+      {{ searchInputFormValue }}
+      <input type="submit" value="search">
+    </form>
+    <div>
+      {% block resultContent %}
+
+      {% endblock resultContent %}
+    </div>
+{% endblock searchForm %}
